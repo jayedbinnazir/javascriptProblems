@@ -1,0 +1,25 @@
+1,Aymbols are skipped by for in loop / Object.keys()
+2. when it comes to cloning like object.assign() it also copies symbols .
+3. Array.from() works both with ArrayLike and iterable but spread syntex is 
+     works with iterable --> that is converting them into a plain array
+
+4. Call the iterator explicitly and output a string characcter by characcter
+5. represent Array.from( ) with all arguments . and make an array with modified values .
+6. In closure and nested function concept ,--> Imagine a function with nested one as a constructor of a new
+     lexical environment . and nested function is a method for that nested object . it will make ur life
+     easier
+7. There are two kinds of caching logic 
+  --> caching 
+  --> Partial caching 
+  The difference is , In caching we directly implement the caching logic for the particular function 
+  bt, in partial caching we partially call the main function passing it's refrence to another function
+  that provides some functionality of it's own . This is universal algorithm for all functions . bcz we can pass 
+  any function to decorate it with this functionality . So, Create once unlike regular caching
+  
+  8. The difference between func.call()/apply()/bind() is call and apply is used while calling a function with context
+     bt, bind is not for calling a function, the method bind is just for binding the context and not
+     instantly calling th e 
+     another main difference is that  , when we bind the function to the object , it will be availbale all over
+     the code for the same object, even if we change the object nothing will interrupt with that bind function .
+     iF we want to get the changed Object Method , Then we have to creat another bind function
+     so the bind method is sticky

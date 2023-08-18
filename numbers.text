@@ -1,0 +1,55 @@
+1. In which format javascript stores the regular number ; --> Double precision floating point  
+    --> How 64 bit is used ?
+2. write the two ways to represent--> 200000000000  and 0.00003  ; 
+3. How many number systems are there . How to represent them ? 
+    -->How to write them, and In what purpose they are used For
+4. why two dots is used after integers . for using toString()method ;
+5. show all coversion in number system using a method
+6. Convert 3.1-> 3 , -1.1->-2 / 3.1->4 , -1.1->-1 / 3.1->3 , 3.6->4 , 3.5->4 
+           !) Remove all decimal parts without rounding
+7. num = 1.2345 ; make it 1.23 by doing math / use a built in function for this  , also show that toFixed( ) rounds 
+    the decimal parts to the nearest value
+8. are 0.1+0.2 equals 0.3 ! If not , than solve the problem 
+9.what are the special number type , How to check them ?
+10. Difference between the 4 methods of checking the special numeric system
+11. write about Object.is() method . what is it? why it is used?
+12. explain ParseInt & parseFloat  ; when do the return NAN ? 
+
+//Tasks
+1.Create a script that prompts the visitor to enter two numbers and then shows their sum.
+2. According to the documentation Math.round and toFixed both round to the nearest number: 0..4 lead down while 5..9 lead up.
+
+    For instance:
+
+    alert( 1.35.toFixed(1) ); // 1.4
+
+3.Create a function readNumber which prompts for a number until the visitor enters a valid numeric value.
+  The resulting value must be returned as a number.
+  The visitor can also stop the process by entering an empty line or pressing “CANCEL”. In that case, the function should return null.
+  Run the demo
+
+4.This loop is infinite. It never ends. Why?
+
+    let i = 0;
+    while (i != 10) {
+    i += 0.2;
+
+5. The built-in function Math.random() creates a random value from 0 to 1 (not including 1).
+
+    Write the function random(min, max) to generate a random floating-point number from min to max (not including max).
+
+    Examples of its work:
+
+    alert( random(1, 5) ); // 1.2345623452
+    alert( random(1, 5) ); // 3.7894332423
+    alert( random(1, 5) ); // 4.3435234525
+
+6. Create a function randomInteger(min, max) that generates a random integer number from min to max including both min and max as possible values.
+
+    Any number from the interval min..max must appear with the same probability.
+
+    Examples of its work:
+
+    alert( randomInteger(1, 5) ); // 1
+    alert( randomInteger(1, 5) ); // 3
+    alert( randomInteger(1, 5) ); // 5

@@ -1,0 +1,64 @@
+1. What is the benifit using map over plain object
+2. Convert Object->Map / Map->Object
+3. What is set? And what is it's feature? Give an Example?
+4. The alternative to Set could be an array of users,
+   and the code to check for duplicates on every insertion using arr.find. 
+5. What is built for compatibility witha map ? How can we replace map by set with ease and vice-versa ? give an Example
+    Make a shopping Cart for giving this example .
+6.When we need Set Over map ? Give an example by tracking IP addresses
+
+
+7.Filter unique array members
+importance: 5
+Let arr be an array.
+
+Create a function unique(arr) that should return an array with unique items of arr.
+
+For instance:
+
+function unique(arr) {
+  /* your code */
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(values) ); // Hare, Krishna, :-O
+P.S. Here strings are used, but can be values of any type.
+
+P.P.S. Use Set to store unique values.
+
+8.Filter anagrams
+importance: 4
+Anagrams are words that have the same number of same letters, but in different order.
+
+For instance:
+
+nap - pan
+ear - are - era
+cheaters - hectares - teachers
+Write a function aclean(arr) that returns an array cleaned from anagrams.
+
+For instance:
+
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
+From every anagram group should remain only one word, no matter which one.
+
+9.Iterable keys
+importance: 5
+We’d like to get an array of map.keys() in a variable and then apply array-specific methods to it, e.g. .push.
+
+But that doesn’t work:
+
+let map = new Map();
+
+map.set("name", "John");
+
+let keys = map.keys();
+
+// Error: keys.push is not a function
+keys.push("more");
+Why? How can we fix the code to make keys.push work?

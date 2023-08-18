@@ -1,0 +1,202 @@
+// Arrays
+
+1. what is an array ?
+2. explain the two way of declaration of Arrays , and why should we us literat instead of constructor syntex
+3. use negative index to access property
+4. access elements by for loop , 
+5. why should we use for..of instead of for..in , what is the differencve between them
+6. clear the array nort using length property 
+7. Stack- Que - Deque 
+8. add and removeww multiple eliments to and from the array
+9. Arrays do not have Symbol.toPrimitive, neither a viable valueOf, they implement only toString ///
+    show some exaple that arrays are auto converted to string in alert
+10. why shouldn't we compare arrays with == , instead we use  === ?
+11. Compare two arrays item by item checks by iteratig
+12. why shouldn't we use the delete methode for removing elements?
+
+Task--->
+1) importance: 5
+Let’s try 5 array operations.
+
+Create an array styles with items “Jazz” and “Blues”.
+Append “Rock-n-Roll” to the end.
+Replace the value in the middle with “Classics”. Your code for finding the middle value should work for any arrays with odd length.
+Strip off the first value of the array and show it.
+Prepend Rap and Reggae to the array.
+The array in the process:
+
+Jazz, Blues
+Jazz, Blues, Rock-n-Roll
+Jazz, Classics, Rock-n-Roll
+Classics, Rock-n-Roll
+Rap, Reggae, Classics, Rock-n-Roll
+
+2)What is the result? Why?
+
+let arr = ["a", "b"];
+
+arr.push(function() {
+  alert( this );
+});
+
+arr[2](); // ?
+
+3)Write the function sumInput() that:
+
+Asks the user for values using prompt and stores the values in the array.
+Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+Calculates and returns the sum of array items.
+P.S. A zero 0 is a valid number, please don’t stop the input on zero.
+
+4)The input is an array of numbers, e.g. arr = [1, -2, 3, 4, -9, 6].
+
+The task is: find the contiguous subarray of arr with the maximal sum of items.
+
+Write the function getMaxSubSum(arr) that will return that sum.
+
+For instance:
+
+getMaxSubSum([-1, 2, 3, -9]) == 5 (the sum of highlighted items)
+getMaxSubSum([2, -1, 2, 3, -9]) == 6
+getMaxSubSum([-1, 2, 3, -9, 11]) == 11
+getMaxSubSum([-2, -1, 1, 2]) == 3
+getMaxSubSum([100, -9, 2, -3, 5]) == 100
+getMaxSubSum([1, 2, 3]) == 6 (take all)
+If all items are negative, it means that we take none (the subarray is empty), so the sum is zero:
+
+getMaxSubSum([-1, -2, -3]) = 0
+Please try to think of a fast solution: O(n2) or even O(n) if you can.
+
+
+------------
+1. let arr = ["I", "study", "JavaScript", "right", "now"]; // remove 3 first elements and replace them with another;
+        make an array of removed elements
+2. make a subset of an array , make a independent copy of the whole array .
+3.merger two array and insert more elements in it 
+4. merge array and arrayLike objects 
+
+5. Write all the iteration methods 
+6. suppose we have an array that repeats  'apple'  items many times ,, code for find out all the occurences of position
+7. let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];   find out the index number dependeing on the condition ,
+    also can u get the all occurences ? also  find the all elements which matches the condition
+
+8. Find all the users whose id<3 ;
+9. ["Bilbo", "Gandalf", "Nazgul"] transform this array item into its length
+10. let arr = [ 1, 2, 15 ]; turn it into ascending order
+11.let countries = ['Österreich', 'Andorra', 'Vietnam']; order should be // Andorra,Österreich,Vietnam (correct!)
+
+12. let arr = [1, 2, 3, 4, 5]; reversw the order 
+13. let names = 'Bilbo, Gandalf, Nazgul, sureman'; turn it into array of two items by splitting it given delim ; and back it into array again
+14. tset--> Turn it into letters array
+15. let arr = [1, 2, 3, 4, 5]; find out the sum of the all items
+16. why should i specify always the initial value in arr.reducer
+17. Test the value is array or not
+18. why thisArgs is used for , show an example
+19. Which method modify the array itself
+20 . compare The arrays item by item and return true or false wheather the arrays r equal or not
+21. arr.flat(depth)/ arr.flatMap() use them for multidimentional array
+
+
+Task----
+1.Translate border-left-width to borderLeftWidth
+importance: 5
+Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
+
+That is: removes all dashes, each word after dash becomes uppercased.
+
+Examples:
+
+camelize("background-color") == 'backgroundColor';
+camelize("list-style-image") == 'listStyleImage';
+camelize("-webkit-transition") == 'WebkitTransition';
+P.S. Hint: use split to split the string into an array, transform it and join back.
+
+Open a sandbox with tests.
+
+2) Filter range
+  importance: 4
+Write a function filterRange(arr, a, b) that gets an array arr, looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
+
+The function should not modify the array. It should return the new array.
+
+For instance:
+
+let arr = [5, 3, 8, 1];
+
+let filtered = filterRange(arr, 1, 4);
+
+alert( filtered ); // 3,1 (matching values)
+
+alert( arr ); // 5,3,8,1 (not modified)
+Open a sandbox with tests.
+
+3)Filter range "in place"
+importance: 4
+Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
+
+The function should only modify the array. It should not return anything.
+
+For instance:
+
+let arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+
+alert( arr ); // [3, 1]
+
+4)Sort in decreasing order
+importance: 4
+let arr = [5, 2, 1, -10, 8];
+
+// ... your code to sort it in decreasing order
+
+alert( arr ); // 8, 5, 2, 1, -10
+
+
+5)Copy and sort array
+importance: 5
+We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+
+Create a function copySorted(arr) that returns such a copy.
+
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr);
+
+alert( sorted ); // CSS, HTML, JavaScript
+alert( arr ); // HTML, JavaScript, CSS (no changes)
+solution
+
+6)Create an extendable calculator
+importance: 5
+Create a constructor function Calculator that creates “extendable” calculator objects.
+
+The task consists of two parts.
+
+First, implement the method calculate(str) that takes a string like "1 + 2" in the format “NUMBER operator NUMBER” (space-delimited) and returns the result. Should understand plus + and minus -.
+
+Usage example:
+
+let calc = new Calculator;
+
+alert( calc.calculate("3 + 7") ); // 10
+Then add the method addMethod(name, func) that teaches the calculator a new operation. It takes the operator name and the two-argument function func(a,b) that implements it.
+
+For instance, let’s add the multiplication *, division / and power **:
+
+let powerCalc = new Calculator;
+powerCalc.addMethod("*", (a, b) => a * b);
+powerCalc.addMethod("/", (a, b) => a / b);
+powerCalc.addMethod("**", (a, b) => a ** b);
+
+let result = powerCalc.calculate("2 ** 3");
+alert( result ); // 8
+No parentheses or complex expressions in this task.
+The numbers and the operator are delimited with exactly one space.
+There may be error handling if you’d like to add it.
+
+

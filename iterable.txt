@@ -1,0 +1,8 @@
+1. show that string, are iterable. ? object, arrayLike and iterables 7. likes , numbers are not !
+2. implement iterator for the arrays .
+3. implement iterator for plain objects .
+4. implement iterator in the plain object and use the object as an iterator itself 
+5. what is the drawback of solution 4 ,
+6. why iterables can be arrayLike but arrayLike can't be iterables
+    1) Give an exaple of that is both arrayLike and iterables 
+7.

@@ -1,0 +1,42 @@
+1. What is function in javascript?
+2. Why we call a function as an object?
+3. What iis 'Contextual Name' features?
+4. What is the caase when we can't figure out the name? 
+5. Give an example of use of length property of a function? and why it is used?
+6. Use function porperties to count the total function call ?
+7. Make a independent counter function by using function properties?
+8. What is the difference between function props and function variables?
+9. What is NFE ? why to use NFE ? Give an example .
+
+
+
+10. Set and decrease for counter
+importance: 5
+Modify the code of makeCounter() so that the counter can also decrease and set the number:
+
+counter() should return the next number (as before).
+counter.set(value) should set the counter to value.
+counter.decrease() should decrease the counter by 1.
+See the sandbox code for the complete usage example.
+
+P.S. You can use either a closure or the function property to keep the current count. Or write both variants.
+
+11. Sum with an arbitrary amount of brackets
+importance: 2
+Write function sum that would work like this:
+
+sum(1)(2) == 3; // 1 + 2
+sum(1)(2)(3) == 6; // 1 + 2 + 3
+sum(5)(-1)(2) == 6
+sum(6)(-1)(-2)(-3) == 0
+sum(0)(1)(2)(3)(4)(5) == 15
+P.S. Hint: you may need to setup custom object to primitive conversion for your function.
+
+Open a sandbox with tests.
+
+
+
+12. What is New Function syntex ? How to use it ?
+13. where the new function syntex can be used? (The function is always passed as an string at run time)
+14. Can this function access the outer variable, show an example?
+15. 

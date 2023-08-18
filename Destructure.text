@@ -1,0 +1,28 @@
+The two most used data structures in JavaScript are Object and Array.
+
+Objects allow us to create a single entity that stores data items by key.
+Arrays allow us to gather data items into an ordered list.
+
+1. What is destructuring , why it is used ? show the internally how it is look like
+2. Destructurize Object and Array , with Rest Operator also .
+3. what if The array is shorter than the list of variables in the destucture Left , what will be the output ,? 
+    How can we overcome this . Ccan You use Prompt() .. For the example . can we skip any arguments?
+
+4. Swap The values by destructing assignment
+5. What happens when the array is longer than the list of variables in left side, what to do?
+6. create a nested Object , Destructure it . requirements---> use ...Rest , Variable aliasing with default value , 
+                                                                arry item should be present along with Objects  
+
+7.Imagine a function that creates a menu. It may have a width, a height, a title, items list and so on ;
+    --> why we should pass object as an function arguments , 
+    --> what should we do when all parameters are okay by default
+    --> create a function with the above information and 2 parameter should be okay by default only
+8. The function can be call with no arguments , bt why it is mandatory in destructuring patterns
+9. Loop with Object.entries(obj) using destructuring assignment
+
+---> Solution
+10. differentiate between rest, spread, destructuring -->
+-->by rest pattern we create a function that acpts arbitrary number of arguments , that we dn't know what is passing to the function
+--> and Destructuring is used for creating a function that already has a known arguments and default values
+    in, destructure is used for passing a array[which items are known] , objects{properties are known} , to the function
+--> by spread syntex we simply pass an unknown array while calling a finction

@@ -1,0 +1,135 @@
+1. How to access object props . describe all the technique ;
+2. create a nested copies of an object with three method ;
+3. Read the garbej collection ;
+4. Why shoul we use this in object method ?
+4.1 . pass the reference of the object method to another variable outside 
+      and call it by referencing(forward the call to the main method) , what is the error ?
+      solve it .
+
+4.2 function sayHi() {
+  alert(this.name);
+}
+
+let user = { name: "John" };
+let admin = { name: "Admin" };
+use the function in this two object
+
+5. Here the function makeUser returns an object.
+
+What is the result of accessing its ref? Why?
+
+function makeUser() {
+  return {
+    name: "John",
+    ref: this
+  };
+}
+
+let user = makeUser();
+
+alert( user.ref.name ); // What's the result?
+
+
+6. Create a calculator
+importance: 5
+Create an object calculator with three methods:
+
+read() prompts for two values and saves them as object properties with names a and b respectively.
+sum() returns the sum of saved values.
+mul() multiplies saved values and returns the result.
+let calculator = {
+  // ... your code ...
+};
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+7.Chaining
+importance: 2
+There’s a ladder object that allows to go up and down:
+
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+  },
+  down() {
+    this.step--;
+  },
+  showStep: function() { // shows the current step
+    alert( this.step );
+  }
+};
+Now, if we need to make several calls in sequence, can do it like this:
+
+ladder.up();
+ladder.up();
+ladder.down();
+ladder.showStep(); // 1
+ladder.down();
+ladder.showStep(); // 0
+
+
+8. What is the internal mechanism of constructore function?
+9. create a constructore function that can be called with new or without it ?
+10. Tell me three rules of return statement in constructor function .
+
+
+11. Two functions – one object
+importance: 2
+Is it possible to create functions A and B so that new A() == new B()?
+
+function A() { ... }
+function B() { ... }
+
+let a = new A();
+let b = new B();
+
+alert( a == b ); // true
+If it is, then provide an example of their code.
+
+
+
+12.Create new Calculator
+importance: 5
+Create a constructor function Calculator that creates objects with 3 methods:
+
+read() prompts for two values and saves them as object properties with names a and b respectively.
+sum() returns the sum of these properties.
+mul() returns the multiplication product of these properties.
+For instance:
+
+let calculator = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
+
+
+
+13.Create new Accumulator
+importance: 5
+Create a constructor function Accumulator(startingValue).
+
+Object that it creates should:
+
+Store the “current value” in the property value. The starting value is set to the argument of the constructor startingValue.
+The read() method should use prompt to read a new number and add it to value.
+In other words, the value property is the sum of all user-entered values with the initial value startingValue.
+
+Here’s the demo of the code:
+
+let accumulator = new Accumulator(1); // initial value 1
+
+accumulator.read(); // adds the user-entered value
+accumulator.read(); // adds the user-entered value
+
+alert(accumulator.value); // shows the sum of these values 
+
+
+14. why should we use optional chaining ?
+15. replace optional chaining with && and ? operators 
+16. write all syntexes of accessing property by optional chaining
+17. why we can't write properties by ?.  
+

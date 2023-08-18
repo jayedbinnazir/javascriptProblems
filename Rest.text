@@ -1,0 +1,11 @@
+//1. Write a function that can take any number of arguments and output is the sum of all numbers
+//2. Show that we can use the first 2 parameters as an argument , and the remaining parameter should be an array .
+//3. What is arguments ? Give an example, why we should use rest parameter aginst it , 
+//4. describe arrow function arguments ;
+//5. Use the spread operator in passing function arguments(including normal values) ; merge arrays , split the string
+    // and initialize it into array initializer 
+//6. what is the difference between Array.from(iterables) & ...spread_Operator 
+//7.Use the spread Operator to make a copy of an arry & an object , show that they have the same content
+  // But they Are not equal .
+
+  8. user of rest and spread ?

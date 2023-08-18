@@ -1,0 +1,52 @@
+1. Why We use JSON ---> 2 reason ?
+2. What Type of properties are skipped by The JOSN methods and why ?
+3. Circular References lead to error .. How to solve it? Give an example?
+4. Implement toJSON methods
+5. Deserialize the The circular Object That we have made JSON format and date Object should be present There
+
+
+6. Turn the user into JSON and then read it back into another variable.
+
+let user = {
+  name: "John Smith",
+  age: 35
+};
+
+
+7. Exclude backreferences
+importance: 5
+In simple cases of circular references, we can exclude an offending property from serialization by its name.
+
+But sometimes we can’t just use the name, as it may be used both in circular references and normal properties. So we can check the property by its value.
+
+Write replacer function to stringify everything, but remove properties that reference meetup:
+
+let room = {
+  number: 23
+};
+
+let meetup = {
+  title: "Conference",
+  occupiedBy: [{name: "John"}, {name: "Alice"}],
+  place: room
+};
+
+// circular references
+room.occupiedBy = meetup;
+meetup.self = meetup;
+
+alert( JSON.stringify(meetup, function replacer(key, value) {
+  /* your code */
+}));
+
+/* result should be:
+{
+  "title":"Conference",
+  "occupiedBy":[{"name":"John"},{"name":"Alice"}],
+  "place":{"number":23}
+}
+*/
+solution
+
+
+

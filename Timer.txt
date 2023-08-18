@@ -1,0 +1,72 @@
+1. Write down the setTimeout() and setInterval()  syntexes with example ?
+2. what is the significance of alert,prompt, confirm modal in timer function ?
+3. How to replace setInterval ? why to replace? 2 Reasons ? 
+4. Why nested timeout is so flexible against setInterval . Give an example?
+
+5. let result = false ;
+
+let timer = setTimeout(function change(){
+   
+   console.log('tick') ;
+
+   setTimeout(()=>{result = true , console.log('5second call is executed')},5000)
+
+   if(result){
+      timer = setTimeout(change ,2000)
+   }
+
+
+},2000)
+ Findout the flaw of this code and correct it
+
+ 6. let sum = 0 ;
+function logTick(){
+   for(let i = 0 ; i<=100000000 ; i++ ){
+      sum+=i
+   }
+   console.log(sum , 'times')
+   return sum
+}
+
+console.log(sum)
+
+ 
+let timer = setInterval(function tick(){
+
+   logTick()
+   
+},1000)
+
+what is happening and why ?
+
+
+7. Whay we should clear the time?
+
+8. What is Zero delay setTimeout?
+
+9. Write a function printNumbers(from, to) that outputs a number every second, starting from from and ending with to.
+
+Make two variants of the solution.
+
+Using setInterval.
+Using nested setTimeout.
+
+10. What will setTimeout show?
+importance: 5
+In the code below there’s a setTimeout call scheduled, then a heavy calculation is run, that takes more than 100ms to finish.
+
+When will the scheduled function run?
+
+After the loop.
+Before the loop.
+In the beginning of the loop.
+What is alert going to show?
+
+let i = 0;
+
+setTimeout(() => alert(i), 100); // ?
+
+// assume that the time to execute this function is >100ms
+for(let j = 0; j < 100000000; j++) {
+  i++;
+}

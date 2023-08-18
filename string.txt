@@ -1,0 +1,49 @@
+1. How to access characters ? why we shouldn't use [] brackets for accessing
+2. does strings are mutable? If not , then what to do?
+3. strings are iterable? can we use for of loop?
+4. change the case of the strings>
+5. let str = 'As sly as a fox, as strong as an ox'; // Find the position of all occurences of 'as'
+    -->There is a slight inconvenience with indexOf in the if test. We can’t put it in the if like this: explain it ,
+    what is the best method searching for a substring availability?
+
+6. let str = "stringify"; 
+    use all the getSubstrings Methods and differentiate between them
+
+7 . write about comparing order of the string
+8.what is UTF-16  ?
+
+8. Now let’s see the characters with codes 65..220 (the latin alphabet and a little bit extra) 
+   by making a string of them:
+
+9. Write a correct comparison method for striing ;
+10 . '  A quick Brown Fox   '  remove the extra spaces from the start and end point of the string?
+11. 'Code' repeat this string 10 times
+
+Task-->
+1.Write a function ucFirst(str) that returns the string str with the uppercased first character, for instance:
+  ucFirst("john") == "John"
+
+2.Write a function checkSpam(str) that returns true if str contains ‘viagra’ or ‘XXX’, otherwise false.
+    The function must be case-insensitive:
+
+    checkSpam('buy ViAgRA now') == true
+    checkSpam('free xxxxx') == true
+    checkSpam("innocent rabbit") == false
+
+3.Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength – replaces the end of str with the ellipsis character "…", to make its length equal to maxlength.
+
+    The result of the function should be the truncated (if needed) string.
+
+    For instance:
+
+    truncate("What I'd like to tell on this topic is:", 20) = "What I'd like to te…"
+
+    truncate("Hi everyone!", 20) = "Hi everyone!"
+
+4. We have a cost in the form "$120". That is: the dollar sign goes first, and then the number.
+
+    Create a function extractCurrencyValue(str) that would extract the numeric value from such string and return it.
+
+    The example:
+
+    alert( extractCurrencyValue('$120') === 120 ); // true
